@@ -8,5 +8,6 @@ int main()
     for (int x = 1; x <= n; x++)
     {
         cout << x << " " << x * x << " " << x * x * x << endl;
+        cout << x << " " << (x * x) + 1 << " " << (x * x * x) + 1 << endl;
     }
 }
