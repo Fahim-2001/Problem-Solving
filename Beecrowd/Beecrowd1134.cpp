@@ -18,7 +18,7 @@ int main()
         {
             cout << "MUITO OBRIGADO" << endl;
             cout << "Alcool: " << alco << endl;
-            cout << "Gasoline: " << gaso << endl;
+            cout << "Gasolina: " << gaso << endl;
             cout << "Diesel: " << diesel << endl;
             break;
         }
