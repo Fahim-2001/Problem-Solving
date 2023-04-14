@@ -19,5 +19,7 @@ int main()
             x++;
         } while (count < y);
         cout << sum << endl;
+        sum = 0;
+        count = 0;
     }
 }
