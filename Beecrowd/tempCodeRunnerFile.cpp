@@ -1,1 +1,0 @@
-cout << number << " eh primo" << endl
