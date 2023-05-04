@@ -3,14 +3,16 @@ using namespace std;
 
 int main()
 {
-    int tc, r1, r2, totalArea;
-    cin >> tc;
-    for (int i = 1; i <= tc; i++)
+    int n;
+
+    cin >> n;
+
+    for (int i = 1; i <= n; i++)
     {
-        totalArea = 0;
-        cin >> r1 >> r2;
-        totalArea = r1 + r2;
-        cout << totalArea << endl;
+        if (i == n)
+            cout << "Ho!" << endl;
+        else
+            cout << "Ho ";
     }
     return 0;
 }
