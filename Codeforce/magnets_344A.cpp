@@ -5,7 +5,7 @@ int main()
 {
     int n, liked = 0;
     cin >> n;
-    int arr[n];
+    int arr[100000];
 
     for (int i = 0; i < n; i++)
     {
