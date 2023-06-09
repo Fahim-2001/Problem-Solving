@@ -1,3 +1,2 @@
-cout << max << endl;
-
-        cout << "Sum : " << sum << endl;
+cout << "i->" << i
+        //      << " A[i] : " << arr[i] << endl;
