@@ -1,27 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define Noob_coder 0
 
-void maxFront(int arr[], int size, int &max)
-{
-    int temp;
-
-    for (int i = 1; i < size; i++)
-    {
-        if (arr[i] == max)
-        {
-            temp = arr[i - 1];
-            arr[i - 1] = max;
-            arr[i] = temp;
+int findMaxIndex(int arr[], int size){
+    int maxIndex = 0;
+    for(int i=1; i<size; ++i){
+        if(arr[i]>arr[maxIndex]){
+            maxIndex = i;
         }
     }
+
+    return maxIndex;
 }
 
-void maxMeasure(int arr[], int size, int &max)
-{
-    if (arr[0] != max)
-    {
-        maxFront(arr, size, max);
+int findMinIndex(int arr[],int size){
+    int minIndex = 0;
+    for(int i=1; i<size; ++i){
+        if(arr[i]<=arr[minIndex]){
+            minIndex = i;
+        }
     }
+
+    return minIndex;
 }
 
 int main()
@@ -35,16 +35,14 @@ int main()
         cin >> arr[i];
     }
 
-    int *max = max_element(arr, arr + n);
-    int *min = min_element(arr, arr + n);
+    int maxi = findMaxIndex(arr,n);
+    int mini = findMinIndex(arr,n);
+    
+    if(maxi>mini)
+        mini++;
 
-    while (arr[0] == *max)
-    {
-        maxMeasure(arr, n, *max);
-    }
+    
+    cout << maxi + (n-1) - mini << endl; 
 
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
+    return Noob_coder;
 }
