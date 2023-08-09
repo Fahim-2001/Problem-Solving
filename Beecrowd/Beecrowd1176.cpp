@@ -15,8 +15,8 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        std::cin >> f;
-        std::cout << "Fib(" << f << ") = " << fib[f] << "\n";
+        cin >> f;
+        cout << "Fib(" << f << ") = " << fib[f] << "\n";
     }
     return 0;
 }
