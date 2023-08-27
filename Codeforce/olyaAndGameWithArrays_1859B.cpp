@@ -6,10 +6,11 @@ using namespace std;
 #define pb push_back
 #define b begin()
 #define e end()
-#define me min_element
-#define fahim_noob 0
+#define mnel min_element
+#define mxel max_element
 #define ll long long
 #define sz size()
+#define fahim_noob 0
 
 void solve()
 {
