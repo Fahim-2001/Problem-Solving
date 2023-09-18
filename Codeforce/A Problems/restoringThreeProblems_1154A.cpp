@@ -21,17 +21,25 @@ typedef pair<int, int> IP;
 typedef vector<IP> VIP;
 typedef map<int,int> IMP;
 typedef set<int> ISET;
+typedef set<char> ChSET;
 
 int main(){
-    test{
-        ll n;
-        cin >> n;
-        ll res = INT_MAX;
-        for(int i=1; i<=n; i++){
-            ll rn, at; cin >> rn >> at;
-            res = min(res,(rn+(at-1)/2));
-        }
-        pl res el;
+    int a, b, c, d;
+    cin >> a >> b >> c >> d;
+
+    int mx = max(a, max(b,max(c,d)));
+
+    int ans = mx/3;
+
+    if(mx==a){
+        pl mx-b <<" "<< mx-c <<" "<< mx-d el;
+    }else if(mx==b){
+        pl mx-a <<" "<< mx-c <<" "<< mx-d el;
+    }else if(mx==c){
+        pl mx-b <<" "<< mx-a <<" "<< mx-d el;
+    }else{
+        pl mx-b <<" "<< mx-c <<" "<< mx-a el;
     }
+
     return fahim_noob;
 }
