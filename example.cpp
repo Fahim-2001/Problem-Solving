@@ -24,19 +24,12 @@ typedef set<int> ISET;
 typedef set<char> ChSET;
 
 int main(){
-    IV p;
-    int n;cin>>n;
-    for(int i=0; i<n;i++){
-        int x;cin>>x;
-        p.pb(x);
+    int a=8, b=5;
+    
+    while (a>=b){
+        b+=2;
+        pl b el;
     }
-    sort(p.bn,p.en);
-    int q;cin>>q;
-
-    for(int i=0; i<q; i++){
-        int x;cin>>x;
-        auto ans = upper_bound(p.bn, p.en, x)-p.bn;
-        pl ans el;
-    }
+    
     return fahim_noob;
 }
