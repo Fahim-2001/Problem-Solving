@@ -24,12 +24,21 @@ typedef set<int> ISET;
 typedef set<char> ChSET;
 
 int main(){
-    int a=8, b=5;
+    string s;
+    getline(cin, s);
     
-    while (a>=b){
-        b+=2;
-        pl b el;
+    // auto it = find(s.begin(), s.end(),"'\'");
+
+    // if(it!=s.end()){
+    //     pl "element found at"<< it-s.begin() el;
+    // }else{
+    //     pl "element not found" el;
+    // }
+    for(int i=0; i<s.length(); i++){
+        if(s[i] == "'\'"){
+            pl i el;
+        }
     }
-    
+    pl s el;
     return fahim_noob;
 }
