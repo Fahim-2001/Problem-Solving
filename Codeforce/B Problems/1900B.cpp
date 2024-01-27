@@ -16,6 +16,7 @@ using namespace std;
     int tc;    \
     cin >> tc; \
     while (tc--)
+
 typedef vector<int> IV;
 typedef vector<IV> VIV;
 typedef vector<string> SV;
@@ -27,23 +28,18 @@ typedef set<char> ChSET;
 
 int main()
 {
-
-    int n;
-    cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
+    test
     {
-        cin >> arr[i];
+        int a, b, c;
+        cin >> a >> b >> c;
+
+        if((b + c) % 2 == 0) cout << "1 ";
+		else cout << "0 ";
+		if((a + c) % 2 == 0) cout << "1 ";
+		else cout << "0 ";
+		if((a + b) % 2 == 0) cout << "1 ";
+		else cout << "0 ";
+        cout << endl;
     }
-    sort(arr, arr + n);
-
-    ll sum = 0;
-    for (int i = 0; i < n; i++)
-    {
-        sum += (arr[n - 1] - arr[i]);
-    }
-
-    pl sum el;
-
     return fahim_noob;
 }
