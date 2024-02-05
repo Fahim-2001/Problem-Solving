@@ -26,6 +26,7 @@ typedef map<int, int> IMP;
 typedef set<int> ISET;
 typedef set<char> ChSET;
 
+// Optimal Solution : Using Deutch Flag Algorithm
 void sortColors(vector<int> &nums)
 {
     int n = nums.size();
