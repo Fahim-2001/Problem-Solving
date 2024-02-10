@@ -44,7 +44,7 @@ int maxSubArray(vector<int> &nums)
 
 int main()
 {
-    IV nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-    maxSubArray(nums);
+    IV nums = {-2, -3, 4, -1, -2, 1, 5, -3};
+    pl maxSubArray(nums) el;
     return fahim_noob;
 }
