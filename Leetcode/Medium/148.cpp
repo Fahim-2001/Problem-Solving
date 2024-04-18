@@ -161,8 +161,6 @@ ListNode* sortList(ListNode* head) {
     return newHead;
 }
 
-
-
 void solve(){
     int n; cin >> n;
     IV arr(n);
